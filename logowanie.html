@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Logowanie</title>
+<style type="text/css">
+		 body {
+  background-color:#666699;
+}
+h1 {
+  color: #ffd700;
+  text-align: center;
+}
+#zalog {
+  color: #ffd700;
+  text-align: center;
+  -webkit-box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+}
+#zarej {
+  color: #ffd700;
+  text-align: center;
+  -webkit-box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+}
+input {
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border: solid 1px black;
+  padding: 5px;
+}
+		
+		
+		
+		</style>
+
+
+
+</head>
+<body>
+
+<h1>Zaloguj lub zarejestruj sie!</h1>
+<div id="zalog">
+	<h2>Logowanie:</h2>
+	<form name="input" action="http://127.0.0.1:1337/zalog" method="get">
+Nazwa użytkownika: <input type="text" style="background-color:#FFFFCC;" name="user"><br>
+ Hasło użytkownika: <input type="text" style="background-color:#FFFFCC;" name="pass"><br>
+<input type="submit" style="background-color:#FFFFCC;" value="Zaloguj">
+</form>
+</div>
+<div id="zarej">
+	<h2>Rejestracja:</h2>
+	<form name="input" action="http://127.0.0.1:1337/zarej" method="get">
+Nazwa użytkownika: <input type="text" style="background-color:#FFFFCC;" name="user"><br>
+Hasło użytkownika: <input type="text" style="background-color:#FFFFCC;" name="pass"><br>
+Do jakiej klasy??:<input type="text" style="background-color:#FFFFCC;" name="klasa"><br>
+<input type="checkbox" name="regulamin" style="background-color:#FFFFCC;" value="Reg">Akceptuję regulamin<br> 
+<input type="submit" style="background-color:#FFFFCC;" value="Zarejestruj">
+</form>
+</div>
+
+
+</body>
+</html>

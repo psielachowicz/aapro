@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+		<style type="text/css">
+		 body {
+  background-color:#66FF99;
+}
+h1 {
+  color: #ffd700;
+  text-align: center;
+}
+#zalog {
+  color: #ffd700;
+  text-align: center;
+  -webkit-box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+}
+#zarej {
+  color: #ffd700;
+  text-align: center;
+  -webkit-box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+}
+input {
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border: solid 1px black;
+  padding: 5px;
+}
+		
+		
+		
+		</style>
+	</head>
+	<body>
+		
+    <ul id="messages"></ul>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+      var socket = io();
+      $('form').submit(function(){
+        socket.emit('chat message', $('#m').val());
+        $('#m').val('');
+        return false;
+      });
+      socket.on('chat message', function(msg){
+        $('#messages').append($('<li>').text(msg));
+      });
+    </script>
+  </body>
+</html>

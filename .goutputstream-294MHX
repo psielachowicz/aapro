@@ -1,0 +1,10 @@
+
+body {  
+    @color: #66CCCC;  
+    background-color: @color;  
+   
+}  
+h1 {
+    color: #660066;
+    text-align: center;
+}

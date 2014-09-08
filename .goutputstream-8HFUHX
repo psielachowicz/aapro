@@ -1,0 +1,21 @@
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+@color: #66CCCC;  
+    background-color: @color;  
+body {  
+    @color: #66CCCC;  
+    background-color: @color;  
+   
+}  
+h1 {
+    color: #660066;
+    text-align: center;
+}
+#zalog {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
