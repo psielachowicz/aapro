@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>testowanie</title>
+		<style type="text/css">
+		 body {
+  background-color:#66FF99;
+}
+h1 {
+  color: #ffd700;
+  text-align: center;
+}
+#zalog {
+  color: #ffd700;
+  text-align: center;
+  -webkit-box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+}
+#zarej {
+  color: #ffd700;
+  text-align: center;
+  -webkit-box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+}
+input {
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border: solid 1px black;
+  padding: 5px;
+}
+		
+		
+		
+		</style>
+		<script src="socket.io/socket.io.js"></script>
+		
+	</head>
+</html>
+<body>
+	<h1>Dane z bazy</h1>
+	<ul id="tweets">
+		yyy
+	</ul>
+	<script type="text/javascript">
+		var socket = io.connect("http://127.0.0.1:1337");
+		var ul = document.getElementsById("dane");
+		socket.on('dane', function(dane) {
+			var li = document.createElement("li");
+			li.innerHTML = "<strong>"+dane.login+"</strong>";
+			ul.insertBefore(li, ul.getElementsByTagName("li")[0]);
+		});
+	</script>
+	
+</body>

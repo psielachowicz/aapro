@@ -1,0 +1,27 @@
+body {
+  background-image: url('b.jpg');
+}
+h1 {
+  color: #ffd700;
+  text-align: center;
+}
+#zalog {
+  color: #ffd700;
+  text-align: center;
+  -webkit-box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+}
+#zarej {
+  color: #ffd700;
+  text-align: center;
+  -webkit-box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+}
+input {
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border: solid 1px black;
+  padding: 5px;
+}
